@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3320403C1B9DA1FF0092370B /* colorPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 332040291B9DA1FF0092370B /* colorPicker.bundle */; };
+		3320403D1B9DA1FF0092370B /* NEOColorPickerBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3320402B1B9DA1FF0092370B /* NEOColorPickerBaseViewController.m */; };
+		3320403E1B9DA1FF0092370B /* NEOColorPickerFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3320402D1B9DA1FF0092370B /* NEOColorPickerFavoritesViewController.m */; };
+		3320403F1B9DA1FF0092370B /* NEOColorPickerFavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3320402E1B9DA1FF0092370B /* NEOColorPickerFavoritesViewController.xib */; };
+		332040401B9DA1FF0092370B /* NEOColorPickerGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 332040301B9DA1FF0092370B /* NEOColorPickerGradientView.m */; };
+		332040411B9DA1FF0092370B /* NEOColorPickerHSLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 332040321B9DA1FF0092370B /* NEOColorPickerHSLViewController.m */; };
+		332040421B9DA1FF0092370B /* NEOColorPickerHSLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 332040331B9DA1FF0092370B /* NEOColorPickerHSLViewController.xib */; };
+		332040431B9DA1FF0092370B /* NEOColorPickerHueGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 332040351B9DA1FF0092370B /* NEOColorPickerHueGridViewController.m */; };
+		332040441B9DA1FF0092370B /* NEOColorPickerHueGridViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 332040361B9DA1FF0092370B /* NEOColorPickerHueGridViewController.xib */; };
+		332040451B9DA1FF0092370B /* NEOColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 332040381B9DA1FF0092370B /* NEOColorPickerViewController.m */; };
+		332040461B9DA1FF0092370B /* NEOColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 332040391B9DA1FF0092370B /* NEOColorPickerViewController.xib */; };
+		332040471B9DA1FF0092370B /* UIColor+NEOColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3320403B1B9DA1FF0092370B /* UIColor+NEOColor.m */; };
+		3320404F1B9DC09C0092370B /* NoteAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3320404E1B9DC09C0092370B /* NoteAttribute.swift */; };
+		332040511B9DC09D0092370B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332040501B9DC09D0092370B /* Note.swift */; };
+		332FCB411B9B87B80038B8C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FCB401B9B87B80038B8C5 /* AppDelegate.swift */; };
+		332FCB441B9B87B80038B8C5 /* NotePadApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 332FCB421B9B87B80038B8C5 /* NotePadApp.xcdatamodeld */; };
+		332FCB4B1B9B87B80038B8C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 332FCB491B9B87B80038B8C5 /* Main.storyboard */; };
+		332FCB4D1B9B87B80038B8C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332FCB4C1B9B87B80038B8C5 /* Images.xcassets */; };
+		332FCB501B9B87B80038B8C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 332FCB4E1B9B87B80038B8C5 /* LaunchScreen.xib */; };
+		332FCB5C1B9B87B80038B8C5 /* NotePadAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FCB5B1B9B87B80038B8C5 /* NotePadAppTests.swift */; };
+		334C78981B9ECEFA00F22644 /* ClipboardUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 334C78971B9ECEFA00F22644 /* ClipboardUtility.m */; };
+		334C789B1B9EDF2100F22644 /* KPFontPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 334C789A1B9EDF2100F22644 /* KPFontPicker.m */; };
+		334C78AF1B9EF73500F22644 /* YLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C78AE1B9EF73500F22644 /* YLColor.swift */; };
+		335BC2FD1B9C1688000AF114 /* NotesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FCB451B9B87B80038B8C5 /* NotesListViewController.swift */; };
+		335BC2FE1B9C1688000AF114 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FCB471B9B87B80038B8C5 /* NoteViewController.swift */; };
+		33714B871B9E392600815933 /* NoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33714B861B9E392600815933 /* NoteView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		332FCB561B9B87B80038B8C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 332FCB331B9B87B80038B8C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 332FCB3A1B9B87B80038B8C5;
+			remoteInfo = NotePadApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		332040291B9DA1FF0092370B /* colorPicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = colorPicker.bundle; sourceTree = "<group>"; };
+		3320402A1B9DA1FF0092370B /* NEOColorPickerBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerBaseViewController.h; sourceTree = "<group>"; };
+		3320402B1B9DA1FF0092370B /* NEOColorPickerBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerBaseViewController.m; sourceTree = "<group>"; };
+		3320402C1B9DA1FF0092370B /* NEOColorPickerFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerFavoritesViewController.h; sourceTree = "<group>"; };
+		3320402D1B9DA1FF0092370B /* NEOColorPickerFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerFavoritesViewController.m; sourceTree = "<group>"; };
+		3320402E1B9DA1FF0092370B /* NEOColorPickerFavoritesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEOColorPickerFavoritesViewController.xib; sourceTree = "<group>"; };
+		3320402F1B9DA1FF0092370B /* NEOColorPickerGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerGradientView.h; sourceTree = "<group>"; };
+		332040301B9DA1FF0092370B /* NEOColorPickerGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerGradientView.m; sourceTree = "<group>"; };
+		332040311B9DA1FF0092370B /* NEOColorPickerHSLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerHSLViewController.h; sourceTree = "<group>"; };
+		332040321B9DA1FF0092370B /* NEOColorPickerHSLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerHSLViewController.m; sourceTree = "<group>"; };
+		332040331B9DA1FF0092370B /* NEOColorPickerHSLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEOColorPickerHSLViewController.xib; sourceTree = "<group>"; };
+		332040341B9DA1FF0092370B /* NEOColorPickerHueGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerHueGridViewController.h; sourceTree = "<group>"; };
+		332040351B9DA1FF0092370B /* NEOColorPickerHueGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerHueGridViewController.m; sourceTree = "<group>"; };
+		332040361B9DA1FF0092370B /* NEOColorPickerHueGridViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEOColorPickerHueGridViewController.xib; sourceTree = "<group>"; };
+		332040371B9DA1FF0092370B /* NEOColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEOColorPickerViewController.h; sourceTree = "<group>"; };
+		332040381B9DA1FF0092370B /* NEOColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEOColorPickerViewController.m; sourceTree = "<group>"; };
+		332040391B9DA1FF0092370B /* NEOColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NEOColorPickerViewController.xib; sourceTree = "<group>"; };
+		3320403A1B9DA1FF0092370B /* UIColor+NEOColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+NEOColor.h"; sourceTree = "<group>"; };
+		3320403B1B9DA1FF0092370B /* UIColor+NEOColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+NEOColor.m"; sourceTree = "<group>"; };
+		3320404E1B9DC09C0092370B /* NoteAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteAttribute.swift; path = ../NoteAttribute.swift; sourceTree = "<group>"; };
+		332040501B9DC09D0092370B /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Note.swift; path = ../Note.swift; sourceTree = "<group>"; };
+		332FCB3B1B9B87B80038B8C5 /* NotePadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotePadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		332FCB3F1B9B87B80038B8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		332FCB401B9B87B80038B8C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		332FCB431B9B87B80038B8C5 /* NotePadApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotePadApp.xcdatamodel; sourceTree = "<group>"; };
+		332FCB451B9B87B80038B8C5 /* NotesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListViewController.swift; sourceTree = "<group>"; };
+		332FCB471B9B87B80038B8C5 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		332FCB4A1B9B87B80038B8C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		332FCB4C1B9B87B80038B8C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		332FCB4F1B9B87B80038B8C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		332FCB551B9B87B80038B8C5 /* NotePadAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotePadAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		332FCB5A1B9B87B80038B8C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		332FCB5B1B9B87B80038B8C5 /* NotePadAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePadAppTests.swift; sourceTree = "<group>"; };
+		334C78961B9ECEFA00F22644 /* ClipboardUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClipboardUtility.h; sourceTree = "<group>"; };
+		334C78971B9ECEFA00F22644 /* ClipboardUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClipboardUtility.m; sourceTree = "<group>"; };
+		334C78991B9EDF2100F22644 /* KPFontPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPFontPicker.h; sourceTree = "<group>"; };
+		334C789A1B9EDF2100F22644 /* KPFontPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPFontPicker.m; sourceTree = "<group>"; };
+		334C78AE1B9EF73500F22644 /* YLColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLColor.swift; sourceTree = "<group>"; };
+		336597E81B9CB3530054E3BB /* NotePadApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NotePadApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		33714B851B9E392600815933 /* NoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteView.h; sourceTree = "<group>"; };
+		33714B861B9E392600815933 /* NoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		332FCB381B9B87B80038B8C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332FCB521B9B87B80038B8C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		332040281B9DA1F60092370B /* NeoColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				332040291B9DA1FF0092370B /* colorPicker.bundle */,
+				3320402A1B9DA1FF0092370B /* NEOColorPickerBaseViewController.h */,
+				3320402B1B9DA1FF0092370B /* NEOColorPickerBaseViewController.m */,
+				3320402C1B9DA1FF0092370B /* NEOColorPickerFavoritesViewController.h */,
+				3320402D1B9DA1FF0092370B /* NEOColorPickerFavoritesViewController.m */,
+				3320402E1B9DA1FF0092370B /* NEOColorPickerFavoritesViewController.xib */,
+				3320402F1B9DA1FF0092370B /* NEOColorPickerGradientView.h */,
+				332040301B9DA1FF0092370B /* NEOColorPickerGradientView.m */,
+				332040311B9DA1FF0092370B /* NEOColorPickerHSLViewController.h */,
+				332040321B9DA1FF0092370B /* NEOColorPickerHSLViewController.m */,
+				332040331B9DA1FF0092370B /* NEOColorPickerHSLViewController.xib */,
+				332040341B9DA1FF0092370B /* NEOColorPickerHueGridViewController.h */,
+				332040351B9DA1FF0092370B /* NEOColorPickerHueGridViewController.m */,
+				332040361B9DA1FF0092370B /* NEOColorPickerHueGridViewController.xib */,
+				332040371B9DA1FF0092370B /* NEOColorPickerViewController.h */,
+				332040381B9DA1FF0092370B /* NEOColorPickerViewController.m */,
+				332040391B9DA1FF0092370B /* NEOColorPickerViewController.xib */,
+				3320403A1B9DA1FF0092370B /* UIColor+NEOColor.h */,
+				3320403B1B9DA1FF0092370B /* UIColor+NEOColor.m */,
+			);
+			name = NeoColorPicker;
+			sourceTree = "<group>";
+		};
+		332FCB321B9B87B80038B8C5 = {
+			isa = PBXGroup;
+			children = (
+				332FCB3D1B9B87B80038B8C5 /* NotePadApp */,
+				332FCB581B9B87B80038B8C5 /* NotePadAppTests */,
+				332FCB3C1B9B87B80038B8C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		332FCB3C1B9B87B80038B8C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				332FCB3B1B9B87B80038B8C5 /* NotePadApp.app */,
+				332FCB551B9B87B80038B8C5 /* NotePadAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		332FCB3D1B9B87B80038B8C5 /* NotePadApp */ = {
+			isa = PBXGroup;
+			children = (
+				334C78B11B9F01BA00F22644 /* ThirdParty */,
+				334C78B01B9F01AF00F22644 /* Model */,
+				334C78B31B9F01F400F22644 /* Util */,
+				332FCB401B9B87B80038B8C5 /* AppDelegate.swift */,
+				332FCB451B9B87B80038B8C5 /* NotesListViewController.swift */,
+				332FCB471B9B87B80038B8C5 /* NoteViewController.swift */,
+				33714B851B9E392600815933 /* NoteView.h */,
+				33714B861B9E392600815933 /* NoteView.m */,
+				332FCB491B9B87B80038B8C5 /* Main.storyboard */,
+				332FCB4C1B9B87B80038B8C5 /* Images.xcassets */,
+				332FCB4E1B9B87B80038B8C5 /* LaunchScreen.xib */,
+				332FCB3E1B9B87B80038B8C5 /* Supporting Files */,
+				336597E81B9CB3530054E3BB /* NotePadApp-Bridging-Header.h */,
+			);
+			path = NotePadApp;
+			sourceTree = "<group>";
+		};
+		332FCB3E1B9B87B80038B8C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				332FCB3F1B9B87B80038B8C5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		332FCB581B9B87B80038B8C5 /* NotePadAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				332FCB5B1B9B87B80038B8C5 /* NotePadAppTests.swift */,
+				332FCB591B9B87B80038B8C5 /* Supporting Files */,
+			);
+			path = NotePadAppTests;
+			sourceTree = "<group>";
+		};
+		332FCB591B9B87B80038B8C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				332FCB5A1B9B87B80038B8C5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		334C78B01B9F01AF00F22644 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				332FCB421B9B87B80038B8C5 /* NotePadApp.xcdatamodeld */,
+				332040501B9DC09D0092370B /* Note.swift */,
+				3320404E1B9DC09C0092370B /* NoteAttribute.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		334C78B11B9F01BA00F22644 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				334C78AE1B9EF73500F22644 /* YLColor.swift */,
+				332040281B9DA1F60092370B /* NeoColorPicker */,
+				334C78B21B9F01C600F22644 /* KPFontPicker */,
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		334C78B21B9F01C600F22644 /* KPFontPicker */ = {
+			isa = PBXGroup;
+			children = (
+				334C78991B9EDF2100F22644 /* KPFontPicker.h */,
+				334C789A1B9EDF2100F22644 /* KPFontPicker.m */,
+			);
+			name = KPFontPicker;
+			sourceTree = "<group>";
+		};
+		334C78B31B9F01F400F22644 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				334C78961B9ECEFA00F22644 /* ClipboardUtility.h */,
+				334C78971B9ECEFA00F22644 /* ClipboardUtility.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		332FCB3A1B9B87B80038B8C5 /* NotePadApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 332FCB5F1B9B87B80038B8C5 /* Build configuration list for PBXNativeTarget "NotePadApp" */;
+			buildPhases = (
+				332FCB371B9B87B80038B8C5 /* Sources */,
+				332FCB381B9B87B80038B8C5 /* Frameworks */,
+				332FCB391B9B87B80038B8C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotePadApp;
+			productName = NotePadApp;
+			productReference = 332FCB3B1B9B87B80038B8C5 /* NotePadApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		332FCB541B9B87B80038B8C5 /* NotePadAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 332FCB621B9B87B80038B8C5 /* Build configuration list for PBXNativeTarget "NotePadAppTests" */;
+			buildPhases = (
+				332FCB511B9B87B80038B8C5 /* Sources */,
+				332FCB521B9B87B80038B8C5 /* Frameworks */,
+				332FCB531B9B87B80038B8C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				332FCB571B9B87B80038B8C5 /* PBXTargetDependency */,
+			);
+			name = NotePadAppTests;
+			productName = NotePadAppTests;
+			productReference = 332FCB551B9B87B80038B8C5 /* NotePadAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		332FCB331B9B87B80038B8C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "SAALIS UMER";
+				TargetAttributes = {
+					332FCB3A1B9B87B80038B8C5 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					332FCB541B9B87B80038B8C5 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 332FCB3A1B9B87B80038B8C5;
+					};
+				};
+			};
+			buildConfigurationList = 332FCB361B9B87B80038B8C5 /* Build configuration list for PBXProject "NotePadApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 332FCB321B9B87B80038B8C5;
+			productRefGroup = 332FCB3C1B9B87B80038B8C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				332FCB3A1B9B87B80038B8C5 /* NotePadApp */,
+				332FCB541B9B87B80038B8C5 /* NotePadAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		332FCB391B9B87B80038B8C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				332FCB4B1B9B87B80038B8C5 /* Main.storyboard in Resources */,
+				332FCB501B9B87B80038B8C5 /* LaunchScreen.xib in Resources */,
+				332040421B9DA1FF0092370B /* NEOColorPickerHSLViewController.xib in Resources */,
+				332FCB4D1B9B87B80038B8C5 /* Images.xcassets in Resources */,
+				332040441B9DA1FF0092370B /* NEOColorPickerHueGridViewController.xib in Resources */,
+				3320403C1B9DA1FF0092370B /* colorPicker.bundle in Resources */,
+				332040461B9DA1FF0092370B /* NEOColorPickerViewController.xib in Resources */,
+				3320403F1B9DA1FF0092370B /* NEOColorPickerFavoritesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332FCB531B9B87B80038B8C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		332FCB371B9B87B80038B8C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				335BC2FD1B9C1688000AF114 /* NotesListViewController.swift in Sources */,
+				33714B871B9E392600815933 /* NoteView.m in Sources */,
+				3320403D1B9DA1FF0092370B /* NEOColorPickerBaseViewController.m in Sources */,
+				334C789B1B9EDF2100F22644 /* KPFontPicker.m in Sources */,
+				332040451B9DA1FF0092370B /* NEOColorPickerViewController.m in Sources */,
+				332040511B9DC09D0092370B /* Note.swift in Sources */,
+				332040411B9DA1FF0092370B /* NEOColorPickerHSLViewController.m in Sources */,
+				334C78AF1B9EF73500F22644 /* YLColor.swift in Sources */,
+				335BC2FE1B9C1688000AF114 /* NoteViewController.swift in Sources */,
+				332040431B9DA1FF0092370B /* NEOColorPickerHueGridViewController.m in Sources */,
+				334C78981B9ECEFA00F22644 /* ClipboardUtility.m in Sources */,
+				3320404F1B9DC09C0092370B /* NoteAttribute.swift in Sources */,
+				332040401B9DA1FF0092370B /* NEOColorPickerGradientView.m in Sources */,
+				332FCB411B9B87B80038B8C5 /* AppDelegate.swift in Sources */,
+				332040471B9DA1FF0092370B /* UIColor+NEOColor.m in Sources */,
+				332FCB441B9B87B80038B8C5 /* NotePadApp.xcdatamodeld in Sources */,
+				3320403E1B9DA1FF0092370B /* NEOColorPickerFavoritesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		332FCB511B9B87B80038B8C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				332FCB5C1B9B87B80038B8C5 /* NotePadAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		332FCB571B9B87B80038B8C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 332FCB3A1B9B87B80038B8C5 /* NotePadApp */;
+			targetProxy = 332FCB561B9B87B80038B8C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		332FCB491B9B87B80038B8C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				332FCB4A1B9B87B80038B8C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		332FCB4E1B9B87B80038B8C5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				332FCB4F1B9B87B80038B8C5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		332FCB5D1B9B87B80038B8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		332FCB5E1B9B87B80038B8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		332FCB601B9B87B80038B8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = NotePadApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NotePadApp/NotePadApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		332FCB611B9B87B80038B8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = NotePadApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NotePadApp/NotePadApp-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		332FCB631B9B87B80038B8C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NotePadAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotePadApp.app/NotePadApp";
+			};
+			name = Debug;
+		};
+		332FCB641B9B87B80038B8C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NotePadAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotePadApp.app/NotePadApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		332FCB361B9B87B80038B8C5 /* Build configuration list for PBXProject "NotePadApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				332FCB5D1B9B87B80038B8C5 /* Debug */,
+				332FCB5E1B9B87B80038B8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		332FCB5F1B9B87B80038B8C5 /* Build configuration list for PBXNativeTarget "NotePadApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				332FCB601B9B87B80038B8C5 /* Debug */,
+				332FCB611B9B87B80038B8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		332FCB621B9B87B80038B8C5 /* Build configuration list for PBXNativeTarget "NotePadAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				332FCB631B9B87B80038B8C5 /* Debug */,
+				332FCB641B9B87B80038B8C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		332FCB421B9B87B80038B8C5 /* NotePadApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				332FCB431B9B87B80038B8C5 /* NotePadApp.xcdatamodel */,
+			);
+			currentVersion = 332FCB431B9B87B80038B8C5 /* NotePadApp.xcdatamodel */;
+			path = NotePadApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 332FCB331B9B87B80038B8C5 /* Project object */;
+}
